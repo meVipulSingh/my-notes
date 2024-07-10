@@ -122,11 +122,10 @@ Uniq <filename> [to get the uniq value and filter duplicate]
  
  
 
-
-
-
-
 Networking commands
+
+
+
 Ping <google.com> [to check if website is working or not]
  
 Netstat  [to check active connection of your system]
