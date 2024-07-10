@@ -1,0 +1,179 @@
+My Linux commands
+ 
+Touch <file name> [to create file only]
+ 
+vim  <file name>  [create and edit]
+ 
+Nano <file name> [create and edit]
+ 
+Ls      [to check list of files]
+Ls - la [to check hidden folders]
+Ls -l   [to check timestamp of files]
+ 
+Man <command name> [to get  manual of specific command]
+ 
+Mkdir <folder name>  [to create folder]
+ 
+History  [to check history of the commands you used]
+ 
+Chmod 777 <file name> [to change permissions of file or directory ]
+ 
+Pwd  [to get current location of terminal]
+ 
+Cd  <folder name>[to get into folder]
+Cd .. [to come out of folder]
+ 
+Echo [it's a print function of bash]
+ 
+Sh <file name> [to run script ]  {chmod not required}
+./<file name> [to run script]  {no space} 
+ 
+Cat <file name> [to check file]
+zcat <file name> [to check zip file]
+ 
+Dir <folder name> [to check folder]
+ 
+Free -h   [to check detail about memory]
+ 
+Df -h    [to check storage]
+ 
+Nproc  [to check the cpu]
+ 
+Htop [more advance version of top]
+Top  [to get all details]
+ 
+Ps  [to check all process in more detail in system]
+Ps -ef  [to check all the process running in system]
+Ps -ef | grep <case sensitive>  [to fetch any detail from system]
+ 
+Grep   [grep is a filter that can match a word from the line in a file] 
+ 
+|   [it’s a pipe command which distribute two commands]
+ 
+Sudo Useradd -m <user name>   [to add user]
+Sudo Passwd <add passwd>  [to add password to  new user]
+Cat /etc/group  [to check recent added users/group]
+Exit   [to come out of new user]
+Sudo userdel <user name>   [to delete user]
+Sudo groupadd <group name> [to create group]
+Sudo groupdel <group name>  [to delete group]
+Sudo gpasswd -a <username> <groupname>  [to add single user to group]
+Sudo gpasswd -M <user1,user2,user3> <groupname>  [to add multiple user to group]
+ 
+ 
+Uname [to get the information about  os]
+ 
+Mv     [to move and to rename files and folders]
+ 
+Cp  [to copy files from one folder to another folder]
+Cp -r [to copy folder to another folder]
+ 
+Rm   [to remove files]
+Rm -r   [to remove folder empty or loaded]
+ 
+Head <file name> [to print top 5 lines from script]
+ 
+Tail  <file name>  [to print bottom 5 lines from script]
+ 
+Less  <file name>  [to see file content in full page]
+ 
+More <file name>  [to see file content in terminal view]
+ 
+Wc <file name>  [to get no. of lines, words and bytes]
+ 
+Cut -b  <1-5>  <file name>  [to get the piece of particular line] 
+ 
+Sort <file name>  [to sort text in files]
+ 
+Diff <file one> <file two>  [to check diffrence between file]
+ 
+Du   [to check files quantity]
+ 
+Nohup <command>  [to add any command result in a nohup file]
+ 
+Uname -a [to check the os of the system]
+ 
+Uptime  [to check time and how many user and load of the terminal]
+ 
+Date  [to get the current date]
+ 
+Which <software name>  [to get the location of software install in system]
+ 
+Id  [to get user id or group id]
+ 
+Whoami  [to check your user name]
+ 
+Sudo  [gives you super user permission to go in any files]
+Sudo shutdown [to stop remote sever ex. Aws instances]
+Sudo reboot [to reboot remote server]
+ 
+Apt(application package manager)  [to install any software in Linux vm]
+ 
+Sudo chown <new owner name> <file name> [to change owner of file]
+Sudo chgrp <new group name> <file name> [to change group of file]
+ 
+Zip -r <new folder.zip> <folder name> [to convert any folder to zip]
+Zip <new file.zip> <file name> [to convert any file to zip]
+Unzip <filename> [to unzip any zip file]
+ 
+Locate <filename> [to find location of particular file]
+ 
+Uniq <filename> [to get the uniq value and filter duplicate]
+ 
+ 
+
+
+
+
+
+Networking commands
+Ping <google.com> [to check if website is working or not]
+ 
+Netstat  [to check active connection of your system]
+Ss   [works almost same as netstat]
+ 
+Ifconfig  [it display the current network interface configuration information]
+ 
+Traceroute <goolge.com> [is an network diagnostic used to track ip network from source to destination]
+Tracepath <google.com> [to find network path between a source host and a destination host]
+ 
+Mtr <google.com> [to get ping and ip of the website]{use mt instead of ping and tracepath}
+ 
+Nslookup <google.com> [to check ip address and its active or not]
+ 
+Telnet <google.com> [it helps to connect with port number]
+ 
+Hostname [to check system hostname]
+Sudo hostnamectl set-hostname vipul  [to change system hostname]
+ 
+Ip address show [to get your ip address]
+ 
+Iwconfig  [to check if your terminal is running any wireless connection]
+ 
+Whois <google.com> [to get all details of the domain of any website]
+ 
+Dig <google.com> [it used for retrieving information about DNS name server]
+ 
+Arp <google.com> [if you want to find mac address of any website]
+ 
+Ifplugstatus [to check the interfaces is active or not]
+ 
+ 
+Curl -X GET <api link> |jq   [to work with api just like postman]
+Curl -s -k —insecure <weblink> [to scrape all elements of web to the ternimal]
+ 
+Wget <download link> [to download any file ,document]
+ 
+Watch <command> [to run anything in loop in every 2 second] {this command is to check status on every 2 second}
+ 
+Nmap  -v <website> [if you want to scan any website]
+ 
+Route [to get router information of the system]
+ 
+Tee <filename> [to create new file of working script ]
+ 
+ 
+Check trainwithshubham on YouTube if you can't understand the command.[episode 4 of Linux command]
+ 
+ 
+
