@@ -1,0 +1,98 @@
+Git commands
+
+
+1.To Set global username and email for Git (Locally).
+ 
+Git config --global user.name "<your username>"
+Git config --global user.email "<your email>
+Git config --global core.editor "code --wait"   (To change vim with vs code)
+ 
+2.To initialize Git repo
+ 
+Git init
+ 
+3.To Clone an existing Git Repository 
+ 
+Git clone <repository URL>
+ 
+4.To add file and commit file
+ 
+Git add
+Git .    (to add all file at once)
+Git commit -m "Your commit message"
+ 
+5.To add & commit with single command
+ 
+Git commit -am  "Your commit message" (works only if has to re-commit)
+ 
+6.To delete file/folder
+ 
+rm  <file name>     (To delete file)
+rm -r  <directory name>     (To delete folder)
+ 
+7.To check all commit messages
+ 
+Git log --oneline (check all commit message in one line)
+Git log   (To check all git log and commit)
+ 
+8.To bring back deleted file which is added in git
+ 
+Git reset 
+Git restore <file name>
+ 
+9.To check the status of your git repository
+ 
+Git status
+ 
+10.To create branch and change branch
+ 
+Git branch <branch name>  (To create new branch)
+Git checkout -b <branch name>  (To create new branch and switch)
+Git switch -c <branch name>   (To create new branch and switch)
+Git switch <branch name>    (To switch between branch)
+Git branch   (To check branch's)
+Git branch -D <branch name>  (To delete branch)
+Git branch -m Main    (To change branch name to main)
+ 
+11.To check remote origin of git repository
+ 
+Git remote -v    (github location where repo is created)
+ 
+12.Add remote origin URL
+ 
+git remote add origin <your remote git URL>
+ 
+13.Remove remote origin URL
+ 
+git remote remove origin 
+ 
+14.Fetch all the remote branches
+ 
+           git fetch
+ 
+15.Push your local changes to remote branch
+ 
+           git push origin <branch name>
+ 
+16.Pull your remote changes to local branch
+ 
+           git pull origin <branch name>
+ 
+17.To get back to any commit
+ 
+Git checkout <commit id>    (if u want to go to previous commit )
+Git switch -             (To undo this changes )
+ 
+18.To undo add and commit of any files
+ 
+Git reset                  (To unstage any added file)
+Git reset HEAD~     (To unstage committed files)
+ 
+19.To push for firt time in github
+ 
+git push -u origin main
+ 
+20.To push code from the remote server you need to generate token from github.After that just give this command.
+ 
+git remote set-url origin https://<token>@github.com/<username>/<reponame>
+
