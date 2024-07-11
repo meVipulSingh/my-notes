@@ -1,0 +1,61 @@
+                                                                                                        My all Jenkins notes
+
+[1. To install jenkins in ubuntu on ec2 aws.]********************************************************************************************************************************************
+
+Pre-requisite:
+Java(JDK)
+
+Run the below commands to install java and jenkins:
+
+•	sudo apt update
+•	sudo apt install openjdk-17-jre -y
+
+Verify Java is installed:
+
+•	java -version
+
+Now you can install Jenkins. Run entire command at once:
+
+curl -fsSL https://pkg.jenkins.io/debian/jenkins.io.key | sudo tee \
+/usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+https://pkg.jenkins.io/debian binary/ | sudo tee \
+/etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins -y
+
+Now check jenkins status:
+
+•	sudo service  jenkins status
+
+
+Once jenkins running you need to allow traffice to run on port 8080 on your aws account.
+**Note: ** By default, Jenkins will not be accessible to the external world due to the inbound traffic restriction by AWS. Open port 8080 in the inbound traffic rules as show below.
+
+EC2 > Instances > Click on
+In the bottom tabs -> Click on Security
+Security groups
+Add inbound traffic rules  (you can just allow TCP 8080 as well, in my case, I allowed All traffic).
+
+
+After you login to Jenkins, - Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword 
+Then enter the Administrator password.
+
+After that click on Install suggested plugins.
+
+After that create your username and password and start using your jenkins. 
+
+
+
+[2. To update Jenkins in ubuntu]*********************************************************************************************************************************************************
+•	sudo apt-get update
+•	sudo apt-get --only-upgrade install jenkins
+•	sudo systemctl restart jenkins
+
+
+[3. To uninstall Jenkins in ubuntu]*******************************************************************************************************************************************************
+•	sudo service jenkins stop
+•	sudo apt-get remove --purge jenkins
+
+
+
