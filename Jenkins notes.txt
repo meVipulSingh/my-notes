@@ -7,12 +7,12 @@ Java(JDK)
 
 Run the below commands to install java and jenkins:
 
-•	sudo apt update
-•	sudo apt install openjdk-17-jre -y
+sudo apt update
+sudo apt install openjdk-17-jre -y
 
 Verify Java is installed:
 
-•	java -version
+java -version
 
 Now you can install Jenkins. Run entire command at once:
 
@@ -26,7 +26,7 @@ sudo apt-get install jenkins -y
 
 Now check jenkins status:
 
-•	sudo service  jenkins status
+sudo service  jenkins status
 
 
 Once jenkins running you need to allow traffice to run on port 8080 on your aws account.
@@ -48,14 +48,14 @@ After that create your username and password and start using your jenkins.
 
 
 [2. To update Jenkins in ubuntu]*********************************************************************************************************************************************************
-•	sudo apt-get update
-•	sudo apt-get --only-upgrade install jenkins
-•	sudo systemctl restart jenkins
+sudo apt-get update
+sudo apt-get --only-upgrade install jenkins
+sudo systemctl restart jenkins
 
 
 [3. To uninstall Jenkins in ubuntu]*******************************************************************************************************************************************************
-•	sudo service jenkins stop
-•	sudo apt-get remove --purge jenkins
+sudo service jenkins stop
+sudo apt-get remove --purge jenkins
 
 
 

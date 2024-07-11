@@ -68,15 +68,15 @@ git remote remove origin
  
 14.Fetch all the remote branches
  
-           git fetch
+git fetch
  
 15.Push your local changes to remote branch
  
-           git push origin <branch name>
+git push origin <branch name>
  
 16.Pull your remote changes to local branch
  
-           git pull origin <branch name>
+git pull origin <branch name>
  
 17.To get back to any commit
  
