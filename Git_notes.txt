@@ -59,8 +59,8 @@ Git branch -m Main    (To change branch name to main)
 Git remote -v    (github location where repo is created)
  
 12.Add remote origin URL
- 
-git remote add origin <your remote git URL>
+git remote set-url origin <your remote github URL>
+git remote add origin <your remote github URL>
  
 13.Remove remote origin URL
  

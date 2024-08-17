@@ -57,5 +57,8 @@ sudo systemctl restart jenkins
 sudo service jenkins stop
 sudo apt-get remove --purge jenkins
 
+> To remove java
+sudo apt-get autoremove openjdk-17-jre
+
 
 

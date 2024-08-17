@@ -1,5 +1,9 @@
 My Linux commands
  
+Sudo su -  [to switch to root user]
+Su <username>  [to switch to whatever user you have]
+exit  [to get back to your user] 
+
 Touch <file name> [to create file only]
  
 vim  <file name>  [create and edit]
